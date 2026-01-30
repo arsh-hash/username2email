@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gmail Pic Checker</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    label { display: block; margin-bottom: 8px; }
+    select { padding: 4px; }
+  </style>
+</head>
+<body>
+  <h3>Gmail Pic Checker</h3>
+  <label for="filterMode">Filtering mode:</label>
+  <select id="filterMode">
+    <option value="none">Keep all emails</option>
+    <option value="removeNoPic">Remove emails WITHOUT profile pic</option>
+    <option value="removeWithPic">Remove emails WITH profile pic</option>
+  </select>
+  <script src="popup.js"></script>
+</body>
+</html>
