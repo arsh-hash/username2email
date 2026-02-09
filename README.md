@@ -18,9 +18,13 @@ pip install pyfiglet colorama pyperclip
 
 ## Setup
 Clone the Repository
-```git clone https://github.com/yourusername/username2email.git```
+``` 
+git clone https://github.com/yourusername/username2email.git
+```
 
-```cd username2email```
+``` 
+cd username2email
+```
 
 ## 🚀 Usage 
 Run the script:
@@ -28,7 +32,9 @@ Run the script:
 python username2email.py
 ```
 If that fails:
-```python3 username2email.py```
+``` 
+python3 username2email.py
+```
 
 You will be prompted for:
 
