@@ -1,7 +1,21 @@
 # username2email     
 
-**username2email** is a CLI-based OSINT tool  that generates realistic email address permutations from a target’s name (username) 
-It is designed for **investigative, recon, and research workflows**, where knowing email provide edge in  information gathering.
+**username2email** is a CLI-based OSINT utility that generates realistic email address permutations from a target’s **name** and related identifiers like **username**
+It is built for investigative, reconnaissance, and research workflows, where discovering potential email addresses can significantly improve attribution, pivoting, and enrichment.
+Unlike noisy brute-force generators, username2email focuses on human-like, commonly used email patterns to keep results relevant and usable.
+
+## Why username2email?
+
+In OSINT email addresses are one of the highest-value identifiers.
+They act as stable pivot points across platforms, breaches, social networks, and account ecosystems.
+
+However, in many investigations:
+
+- The email is not directly available
+- Only partial identity data exists (name, alias, city, username)
+- Existing generators produce huge, noisy, unrealistic lists
+
+**username2email** was built to solve this specific gap.
 
 ## ✨ Features    
 - 🖥️ Cross-platform (Windows / Linux )
