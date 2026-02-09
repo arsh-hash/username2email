@@ -38,6 +38,12 @@ You can change the domain manually if needed, but the logic is optimized for Gma
 ## ⚠️ Disclaimer        
 This tool is intended for **educational, research, and lawful OSINT purposes only**. You are responsible for how you use it. Do **not** use it for spam, harassment, or illegal access attempts.
 
+## Demo Video 
+
+[![username2 email video demo ](https://img.youtube.com/vi/W2L7ioO8kFs/0.jpg)](https://youtu.be/W2L7ioO8kFs?si=jxgCBkSapa-T6CyC)
+
+
+
 ## 👤 Author
 Built by Arsh
 https://www.linkedin.com/in/arshdeep-singh-61356331a/
