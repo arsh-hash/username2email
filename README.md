@@ -15,9 +15,11 @@ Install dependencies:
 ```
 pip install pyfiglet colorama pyperclip
 ```
+
 ## Setup
 Clone the Repository
 ```git clone https://github.com/yourusername/username2email.git```
+
 ```cd username2email```
 
 ## 🚀 Usage 
