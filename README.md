@@ -2,20 +2,19 @@
 
 `username2email` is a CLI-based OSINT tool  that generates realistic email address permutations from a target’s name (username) It is designed for **investigative, recon, and research workflows**, where knowing email provide edge in  information gathering.
 
----
-
-## ⚠️ Disclaimer        
-
-This tool is intended for **educational, research, and lawful OSINT purposes only**. You are responsible for how you use it. Do **not** use it for spam, harassment, or illegal access attempts.
-
----
 
 ## ✨ Features    
 
 - 🖥️ Cross-platform (Windows / Linux )
 - 🔢 Supports numeric ranges (e.g., `john0` → `john1000`)
 - 📋 Copies results directly to clipboard
----
+
+
+## ⚠️ Disclaimer        
+
+This tool is intended for **educational, research, and lawful OSINT purposes only**. You are responsible for how you use it. Do **not** use it for spam, harassment, or illegal access attempts.
+
+
 
 ## 🛠 Requirements           
 
@@ -27,7 +26,6 @@ Install dependencies:
 pip install pyfiglet colorama pyperclip
 ```
 
----
 
 ## 🚀 Usage 
 
@@ -49,6 +47,10 @@ The email domain is currently **fixed to `@gmail.com`** .
 You can change the domain manually if needed, but the logic is optimized for Gmail-style patterns.
 
 
+## 🔗 Recommended Extension 
+
+`username2email` is designed to be most effective when paired with a **username2eamil extension**.
+
 
 ## 👤 Author
 
@@ -57,7 +59,3 @@ Built by Arsh
 https://www.linkedin.com/in/arshdeep-singh-61356331a/
 
 
-
-## 🔗 Recommended Extension (Workflow Completion)
-
-`username2email` is designed to be most effective when paired with a **Gmail-based verification workflow**.
