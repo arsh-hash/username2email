@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gmail Pic Checker</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; padding: 15px; width: 220px; }
+    label { display: block; margin-bottom: 8px; font-weight: bold; }
+    select { width: 100%; padding: 6px; margin-bottom: 15px; }
+    button { 
+      width: 100%; 
+      padding: 8px; 
+      background-color: #1a73e8; 
+      color: white; 
+      border: none; 
+      border-radius: 4px; 
+      cursor: pointer; 
+    }
+    button:hover { background-color: #1765cc; }
+    #status { margin-top: 10px; font-size: 0.85em; text-align: center; color: green; }
+  </style>
+</head>
+<body>
+  <h3>Gmail Pic Checker</h3>
+  <label for="filterMode">Filtering mode:</label>
+  <select id="filterMode">
+  <option value="none">Show all emails</option>
+  <option value="removeNoPic">Show emails WITH profile pic</option>
+  <option value="removeWithPic">Show emails WITHOUT profile pic</option>
+  </select>
+
+  <button id="copyBtn">Copy Filtered Emails</button>
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
