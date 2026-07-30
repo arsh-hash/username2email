@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>username2email</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">username<span>2</span>email</div>
+    <div class="header-meta">
+      <span class="version-tag">OSINT · v1.0</span>
+      <span class="subtitle">// email permutation engine</span>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="form-panel">
+    <div class="form-grid">
+      <div class="field">
+        <label>First name</label>
+        <input id="first" placeholder="john" autocomplete="off" />
+      </div>
+      <div class="field">
+        <label>Last name</label>
+        <input id="last" placeholder="doe" autocomplete="off" />
+      </div>
+      <div class="field">
+        <label>Add-up (city / alias)</label>
+        <input id="addup" placeholder="optional" autocomplete="off" />
+      </div>
+      <div class="field">
+        <label>Start number</label>
+        <input id="start" type="number" value="0" />
+      </div>
+      <div class="field">
+        <label>End number</label>
+        <input id="end" type="number" value="99" />
+      </div>
+      <div class="field">
+        <label>Domain</label>
+        <input id="domain" value="@gmail.com" autocomplete="off" />
+      </div>
+    </div>
+
+    <!-- Batch selector -->
+    <div class="batch-selector">
+      <div class="batch-selector-label">
+        <span>Batches</span>
+        <button class="sel-toggle" onclick="toggleAllBatches(this)">deselect all</button>
+      </div>
+      <div class="batch-checks" id="batchChecks">
+        <label class="bcheck"><input type="checkbox" value="b1" checked/><span>B1 · Basic</span></label>
+        <label class="bcheck"><input type="checkbox" value="b2" checked/><span>B2 · Standard</span></label>
+        <label class="bcheck"><input type="checkbox" value="b3" checked/><span>B3 · Reverse</span></label>
+        <label class="bcheck"><input type="checkbox" value="b4" checked/><span>B4 · Extended</span></label>
+        <label class="bcheck"><input type="checkbox" value="b5" checked/><span>B5 · Add-up</span></label>
+        <label class="bcheck"><input type="checkbox" value="b6" checked/><span>B6 · Prefix</span></label>
+        <label class="bcheck"><input type="checkbox" value="b7" checked/><span>B7 · Patterned</span></label>
+        <label class="bcheck"><input type="checkbox" value="b8" checked/><span>B8 · Initial</span></label>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-primary" onclick="generate()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5,3 19,12 5,21"/></svg>
+        Run all batches
+      </button>
+      <button class="btn btn-secondary" onclick="copyAll()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        Copy all
+      </button>
+      <button class="btn btn-danger" onclick="clearAll()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3,6 5,6 21,6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+        Clear
+      </button>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-bar" id="statsBar">
+    <div class="stat"><div class="stat-val" id="sTotal">0</div><div class="stat-lbl">total generated</div></div>
+    <div class="stat"><div class="stat-val" id="sUnique">0</div><div class="stat-lbl">unique</div></div>
+    <div class="stat"><div class="stat-val" id="sBatches">0</div><div class="stat-lbl">active batches</div></div>
+  </div>
+
+  <!-- Output -->
+  <div class="output-wrap" id="output">
+    <div class="empty-state">
+      <span class="big">⌘</span>
+      fill in target info and hit <strong>run all batches</strong>
+    </div>
+  </div>
+
+</div>
+
+<!-- Flash toast -->
+<div class="flash" id="flash"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
