@@ -1,5 +1,8 @@
 # username2email     
 
+online version [username2email](https://arsh-hash.github.io/username2email)
+
+
 **username2email** is a CLI-based OSINT utility that generates realistic email address permutations from a target’s **name** and related identifiers like **username**
 It is built for investigative, reconnaissance, and research workflows, where discovering potential email addresses can significantly improve attribution, pivoting, and enrichment.
 Unlike noisy brute-force generators, username2email focuses on human-like, commonly used email patterns to keep results relevant and usable.
